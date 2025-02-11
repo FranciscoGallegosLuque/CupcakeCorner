@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A16E1BF82D5AD79400596F49 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16E1BF72D5AD79400596F49 /* Order.swift */; };
+		A16E1BFA2D5ADA4600596F49 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16E1BF92D5ADA4600596F49 /* AddressView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A16E1BCC2D56D81D00596F49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		A16E1BBB2D56D81A00596F49 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16E1BCB2D56D81D00596F49 /* CupcakeCornerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupcakeCornerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16E1BD52D56D81D00596F49 /* CupcakeCornerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupcakeCornerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16E1BF72D5AD79400596F49 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A16E1BF92D5ADA4600596F49 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		A16E1BB22D56D81A00596F49 = {
 			isa = PBXGroup;
 			children = (
+				A16E1BF92D5ADA4600596F49 /* AddressView.swift */,
+				A16E1BF72D5AD79400596F49 /* Order.swift */,
 				A16E1BBD2D56D81A00596F49 /* CupcakeCorner */,
 				A16E1BCE2D56D81D00596F49 /* CupcakeCornerTests */,
 				A16E1BD82D56D81D00596F49 /* CupcakeCornerUITests */,
@@ -236,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16E1BF82D5AD79400596F49 /* Order.swift in Sources */,
+				A16E1BFA2D5ADA4600596F49 /* AddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
