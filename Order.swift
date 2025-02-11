@@ -43,7 +43,7 @@ class Order: Codable {
     var zip = ""
     
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+        if ((name.isEmpty || name.first!.isWhitespace)  || (streetAddress.isEmpty || streetAddress.first!.isWhitespace) || (city.isEmpty || city.first!.isWhitespace) || (zip.isEmpty || zip.first!.isWhitespace )){
             return false
         }
         
