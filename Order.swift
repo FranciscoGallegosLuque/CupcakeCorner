@@ -37,10 +37,12 @@ class Order: Codable {
     var extraFrosting = false
     var addSprinkles = false
     
-    var name = ""
-    var streetAddress = ""
-    var city = ""
-    var zip = ""
+    
+    
+    var name: String
+    var streetAddress: String
+    var city: String
+    var zip: String
     
     var hasValidAddress: Bool {
         if ((name.isEmpty || name.first!.isWhitespace)  || (streetAddress.isEmpty || streetAddress.first!.isWhitespace) || (city.isEmpty || city.first!.isWhitespace) || (zip.isEmpty || zip.first!.isWhitespace )){
@@ -68,5 +70,22 @@ class Order: Codable {
         }
         
         return cost
+    }
+    
+    init() {
+        if let dataName = UserDefaults.standard.data(forKey: "addressItems") {
+            if let decodedName = try? JSONDecoder().decode([String].self, from: dataName) {
+                name = decodedName[0]
+                streetAddress = decodedName[1]
+                city = decodedName[2]
+                zip = decodedName[3]
+                return
+            }
+        }
+        
+        name = ""
+        streetAddress = ""
+        city = ""
+        zip = ""
     }
 }
